@@ -1,0 +1,28 @@
+﻿<Window x:Name="wndMain" x:Class="xCryption.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="xCryption" Height="358.163" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="296*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblCredits"  Content="Created by miau#0004" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="645,0,0,0" d:IsLocked="True" Height="26" Width="130"/>
+        <TextBox x:Name="txtMsg" Height="40" Margin="27,57,24,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}"/>
+        <TextBox x:Name="txtEncryptedMsg" Height="40" Margin="27,145,24,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}"/>
+        <TextBox x:Name="txtDecryptedMsg" Height="40" Margin="27,233,24,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" IsEnabled="False"/>
+        <Button x:Name="btnEncry" Content="Encrypt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="661,48,0,0" Background="White" Click="btnEncry_Click" Height="20"/>
+        <Button x:Name="btnDecry" Content="Decrypt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="661,136,0,0" Background="White" Click="btnDecry_Click" Height="20"/>
+        <Button x:Name="btnClear" Content="Clr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Margin="721,48,0,0" Background="White" ClickMode="Press" Click="btnClear_Click" Height="20"/>
+        <Button x:Name="btnClearEncry" Content="Clr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Margin="721,136,0,0" Background="White" ClickMode="Press" Click="btnClearEncry_Click" Height="20"/>
+        <Button x:Name="btnClearDecry" Content="Clr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Margin="721,224,0,0" Background="White" ClickMode="Press" Click="btnClearDecry_Click" Height="20"/>
+        <Label x:Name="lblMsg" Content="Normal Message" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,26,0,0" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.303,0.478" Height="26" Width="104"/>
+        <Label x:Name="lblEncryMsg" Content="Encrypted Message" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,116,0,0" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.303,0.478" Height="26" Width="116"/>
+        <Label x:Name="lblDecryMsg" Content="Decrypted Message" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,206,0,0" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.303,0.478" Height="26" Width="118"/>
+        <Button x:Name="btnPublicKey" Content="Manage Public Key" HorizontalAlignment="Left" Margin="670,43,0,-30" VerticalAlignment="Top" Width="105" ClickMode="Press" Click="btnPublicKey_Click" Grid.Row="1" Height="20"/>
+
+    </Grid>
+</Window>
